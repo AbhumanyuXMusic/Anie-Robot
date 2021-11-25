@@ -69,10 +69,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-ANIE_IMG = "https://telegra.ph/file/7944090b9aca51ef8f562.jpg"
+ANIE_IMG = "https://telegra.ph/file/72d1c951142fbfb085afe.jpg"
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` **Anie** `your group super bot`
+`Heya` 🤗 `I am` **Alisha** `your group super bot`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
 """
 
@@ -82,9 +82,9 @@ buttons = [
             text="❔Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🔥 Sᴏᴜʀᴄᴇ",url="https://github.com/Anieteam/AnieRobot"),
+        InlineKeyboardButton(text="🔥 Sᴏᴜʀᴄᴇ",url="https://t.me/LoL_TuM_BiN"),
         InlineKeyboardButton(
-            text="Anie Userbot 🎶", url="https://github.com/Anieteam/Aniebots"
+            text="ꜱᴜᴘᴘᴏʀᴛ 🎶", url="https://t.me/Shayri_Music_Lovers"
         ),
     ],
     [
@@ -94,7 +94,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="💕 Add me💕", url="http://t.me/Anierobot_bot?startgroup=true"),
+        InlineKeyboardButton(text="💕 Add me💕", url="http://t.me/QueenAlishaRobot?startgroup=true"),
     ],
 ]
 
@@ -106,7 +106,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- @AnieBots's 💕"""
+ @Itz_VeNom_xD 💕"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Aniebotchat", url="t.me/Aniebotsupports")]]
+                [[InlineKeyboardButton(text="Qᴜᴇᴇɴxᴀʟɪꜱʜᴀ", url="https://t.me/Itz_VeNom_xD")]]
             ),
         )
         
@@ -353,7 +353,7 @@ def innexia_about_callback(update, context):
     query = update.callback_query
     if query.data == "anie_":
         query.message.edit_text(
-            text=""" Anie - A bot to manage your groups with additional features!
+            text=""" Qᴜᴇᴇɴxᴀʟɪꜱʜᴀ - A bot to manage your groups with additional features!
             \nHere's the basic help regarding use of Anie.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
@@ -364,13 +364,13 @@ def innexia_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="t.me/Aniebotsupports"
+                            text="Bᴜɢ'ꜱ", url="t.me/Itz_VeNom_xD"
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/Aniebots/11"
+                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/Shayri_Music_Lovers"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="innexia_back")],
+                    [InlineKeyboardButton(text="Back", callback_data="Alisha_back")],
                 ]
             ),
         )
@@ -388,7 +388,7 @@ def innexia_about_callback(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@Anierobot_bot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@queenAlishaRobot` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -446,12 +446,12 @@ def innexia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/Anielogs"),
-                    InlineKeyboardButton(text="Fᴇᴅ", url="t.me/Aniebots"),
+                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/AlishaLogs"),
+                    InlineKeyboardButton(text="Fᴇᴅ", url="t.me/Venomfed1"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/AniebotSupports"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/Aniebots"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/LoL_TuM_BiN"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/Shayri_Music_Lovers"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="anie_basichelp"),
@@ -462,18 +462,18 @@ def innexia_about_callback(update, context):
         )
     elif query.data == "anie_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR Anie DEV'S</b>\n"
+            text=f"<b> CREDIT FOR Alisha DEV'S</b>\n"
             f"\nHere Some Developers Helping in Making The Aniw Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="D3nvil", url="t.me/d3nvil"),
-                    InlineKeyboardButton(text="Anon", url="t.me/noobanon"),
+                    InlineKeyboardButton(text="Dr.AsadAli", url="t.me/Dr_Asad_Ali"),
+                    InlineKeyboardButton(text="Abhimanyu", url="t.me/Itz_VeNom_xD"),
                  ],
                  [
-                    InlineKeyboardButton(text="loly", url="t.me/piroXpower"),
-                    InlineKeyboardButton(text="Zᴀʟɪᴍ", url="https://t.me/Jalim_Munda"),
+                    InlineKeyboardButton(text="Harshit", url="t.me/HarshitSharma361"),
+                    InlineKeyboardButton(text="Dhiren", url="https://t.me/DHiReN_DaYuSh"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="anie_basichelp"),
@@ -489,8 +489,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *Anie*
-                 \nHere is the [🔥Source Code🔥](https://github.com/Anieteam/AnieRobot) .""",
+            text=""" Hi..😻 I'm *Alisha*
+                 \nHere is the [🔥Source Code🔥](https://t.me/Itz_VeNom_xD) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -548,7 +548,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ 📢 ",
-                            url="https://t.me/t.me/Aniebotsupports"
+                            url="https://t.me/t.me/LoL_TuM_BiN"
                         )
                     ],
                 ]
@@ -743,7 +743,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1947924017 and DONATION_LINK:
+        if OWNER_ID != 2074956907 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
